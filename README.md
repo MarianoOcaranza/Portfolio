@@ -1,2 +1,4 @@
 # Portfolio
-personal portfolio 
+Personal portfolio using ReactJS and Django (Python). 
+
+Status: just started
