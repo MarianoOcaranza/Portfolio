@@ -15,6 +15,7 @@
   - `preview` (ImageField): Image representing the project
   - `description` (TextField): A brief description of the project
   - `created_at` and `updated_at` (DateTimeField): Timestamps for project creation and updates
+  - `link` and `source_code` (URLField): To visit sites or the GitHub repository
 
 - Created view to dynamically render the list with HTMX (using hx-request header to distinguish between a full-page and fragment)
 - Created view to render the landing page with normal HTML templates
