@@ -7,6 +7,9 @@ class Project(models.Model):
     description = models.TextField(default='No description added')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    link = models.URLField(null=False, default='Provide an URL')
+    source_code = models.URLField(null=False, default='Provide an URL')
+    
     class Meta:
         verbose_name='Project'
         verbose_name_plural='Projects'

@@ -5,5 +5,7 @@
         <img src="{{project.preview.url}}" style="max-width: 200px;">
     {% endif %}
     <p>{{ project.description }}</p>
+    <a href="{{project.link}}" target="_blank" rel="noopener noreferrer">Visit Site!</a>
+    <a href="{{project.source_code}}" target="_blank" rel="noopener noreferrer">Source Code (GitHub)</a>
 </div>
 {% endfor %}
