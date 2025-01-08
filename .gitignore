@@ -1,8 +1,4 @@
-#Node modules (frontend)
-frontend/node_modules
-
-# Django (backend)
-backend/venv/
-backend/__pycache__/
-backend/*pyc 
-backend/.env
+__pycache__
+*pyc 
+.env
+venv
