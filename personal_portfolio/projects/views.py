@@ -1,9 +1,11 @@
 from django.shortcuts import render
-from rest_framework.viewsets import ReadOnlyModelViewSet
 from .models import Project
-from .serializers import ProjectSerializer
 
-# Create your views here.
-class ProjectView(ReadOnlyModelViewSet):
-    queryset = Project.objects.all()
-    serializer_class = ProjectSerializer
+
+def project_list(request):
+    projects = Project.objects.all()
+    if 'hx-request' in request.headers:
+        return render(request, "projects/project_list_partial.html", {"projects": projects})
+    return render(request, "projects/project_list.html", {"projects": projects})
+
+    

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Proyectos</h1>
+<div hx-get="{% url 'project-list' %}" hx-trigger="load" hx-target="#project-container">
+    <div id="project-container">
+
+    </div>
+    <a href="/">go back</a>
+</div>
+{% endblock %}
